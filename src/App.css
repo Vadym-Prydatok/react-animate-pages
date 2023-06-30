@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+/* .slide-enter {
+  opacity: 0;
+  transform:translateX(-100%);
+}
+.slide-enter-active {
+  opacity: 1;
+  transform:translateX(0);
+  transition: opacity 300ms, transform 300ms;
+}
+.slide-exit {
+  opacity: 1;
+  transform:translateX(0);
+}
+.slide-exit-active {
+  opacity: 0;
+  transform:translateX(-100%);
+  transition: opacity 300ms, transform 300ms;
+} */
+
+.fade-appear,
+.fade-enter {
+    opacity: 0;
+    z-index: 1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.fade-appear-active,
+.fade-enter.fade-enter-active {
+    opacity: 1.0;
+    transition: opacity 300ms linear 150ms;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.fade-exit {
+    opacity: 1.0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.fade-exit.fade-exit-active {
+    opacity: 0;
+    transition: opacity 150ms linear;
+}
+
+
+.about {
+  height: 100vh;
+  background-color: aqua;
+}
+
+.home {
+  height: 100vh;
+  background-color: rgb(13, 71, 71);
+}
+
+.Contacts{
+  height: 100vh;
+  background-color: blueviolet;
+}
+
+ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  justify-content: space-around;
+  list-style: none;
 }
