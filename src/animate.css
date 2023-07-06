@@ -3,15 +3,18 @@
   opacity: 0;
   transform:translateX(-100%);
 }
+
 .slide-enter-active {
   opacity: 1;
   transform:translateX(0);
   transition: opacity 300ms, transform 300ms;
 }
+
 .slide-exit {
   opacity: 1;
   transform:translateX(0);
 }
+
 .slide-exit-active {
   opacity: 0;
   transform:translateX(100%);
@@ -22,13 +25,16 @@
 .fade-enter {
   opacity: 0;
 }
+
 .fade-enter-active {
   opacity: 1;
   transition: opacity 300ms;
 }
+
 .fade-exit {
   opacity: 1;
 }
+
 .fade-exit-active {
   opacity: 0;
   transition: opacity 300ms;
@@ -39,16 +45,19 @@
   opacity: 0;
   transform: scale(0);
 }
+
 .bounce-enter-active {
   opacity: 1;
   transform: scale(1);
   transition: opacity 300ms, transform 300ms;
   animation: bounce-in 0.3s;
 }
+
 .bounce-exit {
   opacity: 1;
   transform: scale(1);
 }
+
 .bounce-exit-active {
   opacity: 0;
   transform: scale(0);
@@ -75,15 +84,18 @@
   opacity: 0;
   transform: rotateY(-90deg);
 }
+
 .flip-enter-active {
   opacity: 1;
   transform: rotateY(0);
   transition: opacity 300ms, transform 300ms;
 }
+
 .flip-exit {
   opacity: 1;
   transform: rotateY(0);
 }
+
 .flip-exit-active {
   opacity: 0;
   transform: rotateY(90deg);
@@ -96,34 +108,41 @@
   opacity: 0;
   transform: scale(0.5);
 }
+
 .zoom-enter-active {
   opacity: 1;
   transform: scale(1);
   transition: opacity 300ms, transform 300ms;
 }
+
 .zoom-exit {
   opacity: 1;
   transform: scale(1);
 }
+
 .zoom-exit-active {
   opacity: 0;
   transform: scale(0.5);
   transition: opacity 300ms, transform 300ms;
 }
 
+/*fade-slide animate */
 .fade-slide-enter {
   opacity: 0;
   transform: translateY(-50px);
 }
+
 .fade-slide-enter-active {
   opacity: 1;
   transform: translateY(0);
   transition: opacity 300ms, transform 300ms;
 }
+
 .fade-slide-exit {
   opacity: 1;
   transform: translateY(0);
 }
+
 .fade-slide-exit-active {
   opacity: 0;
   transform: translateY(50px);
@@ -135,15 +154,18 @@
   opacity: 0;
   transform: translateY(-100%);
 }
+
 .slide-down-enter-active {
   opacity: 1;
   transform: translateY(0);
   transition: opacity 300ms, transform 300ms;
 }
+
 .slide-down-exit {
   opacity: 1;
   transform: translateY(0);
 }
+
 .slide-down-exit-active {
   opacity: 0;
   transform: translateY(100%);
@@ -155,15 +177,18 @@
   opacity: 0;
   transform: scale(0.5) rotate(-180deg);
 }
+
 .rotate-scale-enter-active {
   opacity: 1;
   transform: scale(1) rotate(0);
   transition: opacity 300ms, transform 300ms;
 }
+
 .rotate-scale-exit {
   opacity: 1;
   transform: scale(1) rotate(0);
 }
+
 .rotate-scale-exit-active {
   opacity: 0;
   transform: scale(0.5) rotate(180deg);
@@ -175,15 +200,18 @@
   opacity: 0;
   transform: scale(0.8);
 }
+
 .fade-zoom-enter-active {
   opacity: 1;
   transform: scale(1);
   transition: opacity 300ms, transform 300ms;
 }
+
 .fade-zoom-exit {
   opacity: 1;
   transform: scale(1);
 }
+
 .fade-zoom-exit-active {
   opacity: 0;
   transform: scale(0.8);
@@ -195,15 +223,18 @@
   opacity: 0;
   transform: skewX(-20deg);
 }
+
 .skew-enter-active {
   opacity: 1;
   transform: skewX(0);
+  
   transition: opacity 300ms, transform 300ms;
 }
 .skew-exit {
   opacity: 1;
   transform: skewX(0);
 }
+
 .skew-exit-active {
   opacity: 0;
   transform: skewX(20deg);
@@ -215,15 +246,18 @@
   opacity: 0;
   transform: rotateX(-90deg);
 }
+
 .rotate-x-enter-active {
   opacity: 1;
   transform: rotateX(0);
   transition: opacity 300ms, transform 300ms;
 }
+
 .rotate-x-exit {
   opacity: 1;
   transform: rotateX(0);
 }
+
 .rotate-x-exit-active {
   opacity: 0;
   transform: rotateX(90deg);

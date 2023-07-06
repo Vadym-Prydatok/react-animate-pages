@@ -49,7 +49,7 @@ p {
 }
 
 header {
-  height: 40px;
+  height: 4vh;
   background: hsla(191, 61%, 89%, 0.062);
   display: flex;
   flex-direction: row;
@@ -140,6 +140,12 @@ select {
   -webkit-box-shadow: 5px 5px 15px 5px #000000; 
   box-shadow: 5px 5px 15px 5px #000000;
   border-bottom: 1px solid black;
+  transition: all ease-in-out 0.3s;
+}
+
+.home ul li:hover {
+  transition: all ease-in-out 0.3s;
+  transform: scale(1.02);
 }
 
 @media only screen and (max-width: 768px) {
@@ -156,6 +162,7 @@ select {
   html {
     overflow: auto;
     font-size: 12px;
+    background: radial-gradient(circle, rgba(26,241,184,1) 0%, rgba(16,136,72,1) 100%);
   }
 
   ul {

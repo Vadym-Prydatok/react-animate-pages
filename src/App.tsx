@@ -19,7 +19,7 @@ const App: FC = () => {
         <div>
           Try another animate
           <select 
-            onChange={(event) => setAnimate(event.target.value)}
+            onChange={({ target }) => setAnimate(target.value)}
             name="selectAnimate"
           >
             <option value="slide" selected>Slide</option>
