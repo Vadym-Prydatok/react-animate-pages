@@ -1,61 +1,214 @@
-/* .slide-enter {
-  opacity: 0;
-  transform:translateX(-100%);
-}
-.slide-enter-active {
-  opacity: 1;
-  transform:translateX(0);
-  transition: opacity 300ms, transform 300ms;
-}
-.slide-exit {
-  opacity: 1;
-  transform:translateX(0);
-}
-.slide-exit-active {
-  opacity: 0;
-  transform:translateX(-100%);
-  transition: opacity 300ms, transform 300ms;
-} */
+html {
+  background-image: linear-gradient(to right bottom, #55bc6f,
+  #52bf78, #50c382, #4ec68b, #4dc994, #4fc699, #53c29d,
+  #58bfa0, #61b49e, #6aa99a, #729d95, #7a928e);
 
-.fade-appear,
-.fade-enter {
-    opacity: 0;
-    z-index: 1;
+  overflow: hidden;
 }
 
-.fade-appear-active,
-.fade-enter.fade-enter-active {
-    opacity: 1.0;
-    transition: opacity 300ms linear 150ms;
+a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: blueviolet;
+  text-shadow: -2px 2px 3px rgba(199,125,62,0.39);
+  filter: grayscale(100%);
+  transition: all ease-in-out 0.3s;
 }
 
-.fade-exit {
-    opacity: 1.0;
+a:hover {
+  filter: grayscale(0);
+  transition: all ease-in-out 0.3s;
 }
 
-.fade-exit.fade-exit-active {
-    opacity: 0;
-    transition: opacity 150ms linear;
+h1 {
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+  text-shadow: -3px 2px 3px rgba(222,95,58,0.43);
 }
 
+h2 {
+  margin: 0;
+  text-align: center;
+  padding: 10px;
+  text-shadow: -3px 2px 3px rgba(222,95,58,0.43);
+}
+
+h4 {
+  margin: 8px 0;
+}
+
+p {
+  padding: 2px 80px;
+  text-align: center;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+header {
+  height: 40px;
+  background: hsla(191, 61%, 89%, 0.062);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid gray;
+
+  -webkit-box-shadow: 0px 5px 15px -1px #0E4A16; 
+  box-shadow: 0px 5px 15px -1px #0E4A16;
+}
 
 .about {
   height: 100vh;
-  background-color: aqua;
 }
 
 .home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 14px;
   height: 100vh;
-  background-color: rgb(13, 71, 71);
 }
 
-.Contacts{
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
   height: 100vh;
-  background-color: blueviolet;
+}
+
+.contacts a {
+  font-size: 20px;
+  color: rgb(78, 15, 15);
+  font-weight: 700;
+  border-bottom: 2px solid rgb(129, 26, 26);
+  transition: all ease-in-out 0.3s;
+}
+
+.contacts a:hover {
+  color: rgb(153, 138, 4);
+  transition: all ease-in-out 0.3s;
 }
 
 ul {
   display: flex;
   justify-content: space-around;
+  width: 80vw;
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.created {
+  color: rgb(2, 2, 58);
+  position: absolute;
+  padding: 5px;
+  bottom: 0;
+}
+
+select {
+  margin-left: 10px;
+  background: rgb(177, 243, 177);
+  border-radius: 5px;
+}
+
+.active {
+  border-bottom: 2px solid salmon;
+}
+
+.home ul {
+  width: 60vw;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.home ul li {
+  display: block;
+  padding: 10px;
+  border-radius: 8px;
+  width: 180px;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+  box-shadow: 5px 5px 15px 5px #000000;
+  border-bottom: 1px solid black;
+}
+
+@media only screen and (max-width: 768px) {
+  .home ul {
+    width: 96vw;
+    justify-content: center;
+  }
+
+  .home ul li {
+    width: 120px;
+    font-size: 12px;
+  }
+
+  html {
+    overflow: auto;
+    font-size: 12px;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    width: 90vw;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  select {
+    margin: 5px;
+  }
+
+  .created {
+    position: static;
+  }
+
+  a {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  
+  h1 {
+    padding: 2px;
+  }
+  
+  h2 {
+    padding: 2px;
+  }
+
+  h3 {
+    padding: 4px;
+    margin: 0 8px;
+  }
+  
+  h4 {
+    padding: 4px;
+    margin: 0 8px;
+  }
+  
+  p {
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .home ul {
+    width: 86vw;
+    justify-content: center;
+  }
 }
